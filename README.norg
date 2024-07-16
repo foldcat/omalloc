@@ -5,11 +5,16 @@
 
 ** to use 
    lob the directory in your project
+
    @code odin
    import mi "mimalloc"
 
    context.allocator = mi.global_allocator()
    @end
+
+   remember to place the shared object at the 
+   root of the directory and change the name in 
+   `mimalloc.odin` to match the shared object
 
 *** credits 
     this is a fork of https://github.com/jakubtomsu/odin-mimalloc
