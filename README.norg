@@ -1,0 +1,15 @@
+* omalloc
+  modified [this](https://github.com/jakubtomsu/odin-mimalloc)
+  for use on linux and a few (actually just one) tweak to 
+  get it compiling
+
+** to use 
+   lob the directory in your project
+   @code odin
+   import mi "mimalloc"
+
+   context.allocator = mi.global_allocator()
+   @end
+
+*** credits 
+    this is a fork of https://github.com/jakubtomsu/odin-mimalloc
